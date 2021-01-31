@@ -29,7 +29,7 @@ and licensed under a Creative Commons Attribution License (CC0). Not to be confu
 - Please concider passing an `email` with a `RevgeocodeRequest` to be contacted by OSM team whenever the API use would be considered significant.
 
 ## Motivation
-- This library is made because [osm_nominatim](https://github.com/jld3103/osm-nominatim) is available only under the viral GPL 3 license hence is unusible in any projects with any other license. No other Nominatim libraries weren't available at pub.dev at the moment.
+- This library is made because [osm_nominatim](https://github.com/jld3103/osm-nominatim) is available only under the viral GPL 3 license hence is unusible in any projects with any other license. No other Nominatim libraries with web support weren't available at pub.dev at the moment.
 - On my project this code is used only as a fallback option whenever the main geocoder fails to return a meaningful results.
 
 ## License
