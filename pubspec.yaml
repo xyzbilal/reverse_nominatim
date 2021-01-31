@@ -1,7 +1,7 @@
 name: reverse_nominatim
 description: OSM Nominatim reverse geocoder.
 version: 0.0.1
-author: Ilya Yachin
+repository: https://github.com/illabo/reverse_nominatim
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
