@@ -10,10 +10,10 @@ class Geocoding {
     this.query,
   });
 
-  String version;
-  String licence;
-  String attribution;
-  String query;
+  String? version;
+  String? licence;
+  String? attribution;
+  String? query;
 
   factory Geocoding.fromJson(Map<String, dynamic> json) =>
       _$GeocodingFromJson(json);

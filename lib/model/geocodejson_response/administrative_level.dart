@@ -1,7 +1,7 @@
-import 'package:json_annotation/json_annotation.dart';
+
 part 'administrative_level.g.dart';
 
-@JsonSerializable(explicitToJson: true, nullable: true)
+
 class AdministrativeLevel {
   AdministrativeLevel({
     this.level1,
@@ -16,16 +16,16 @@ class AdministrativeLevel {
     this.level10,
   });
 
-  String level1;
-  String level2;
-  String level3;
-  String level4;
-  String level5;
-  String level6;
-  String level7;
-  String level8;
-  String level9;
-  String level10;
+  String? level1;
+  String? level2;
+  String? level3;
+  String? level4;
+  String? level5;
+  String? level6;
+  String? level7;
+  String? level8;
+  String? level9;
+  String? level10;
 
   factory AdministrativeLevel.fromJson(Map<String, dynamic> json) =>
       _$AdministrativeLevelFromJson(json);

@@ -8,8 +8,8 @@ class Geometry {
     this.type,
   });
 
-  List<double> coordinates;
-  String type;
+  List<double>? coordinates;
+  String? type;
 
   factory Geometry.fromJson(Map<String, dynamic> json) =>
       _$GeometryFromJson(json);

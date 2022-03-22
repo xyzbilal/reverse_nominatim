@@ -8,7 +8,7 @@ class FeatureProperties {
     this.geocoding,
   });
 
-  PropertiesGeocoding geocoding;
+  PropertiesGeocoding? geocoding;
 
   factory FeatureProperties.fromJson(Map<String, dynamic> json) =>
       _$FeaturePropertiesFromJson(json);

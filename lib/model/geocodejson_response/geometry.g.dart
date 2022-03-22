@@ -8,9 +8,7 @@ part of 'geometry.dart';
 
 Geometry _$GeometryFromJson(Map<String, dynamic> json) {
   return Geometry(
-    coordinates: (json['coordinates'] as List)
-        ?.map((e) => (e as num)?.toDouble())
-        ?.toList(),
+    coordinates:json['coordinates'] != null ? (json['coordinates'] as List).map((e) => (e as num).toDouble()).toList() :[],
     type: json['type'] as String,
   );
 }

@@ -4,7 +4,7 @@ class RevgeocodeRequest {
   final double _lon;
   int _zoom;
   bool addressDetails;
-  String language;
+  String? language;
 
   set zoom(int value) {
     if (value > 18) {
@@ -20,11 +20,11 @@ class RevgeocodeRequest {
 
   int get zoom => _zoom;
 
-  String email;
+  String? email;
 
   RevgeocodeRequest(
-      {double lat,
-      double lon,
+      {required double lat,
+      required double lon,
       int zoom = 18,
       this.addressDetails = false,
       this.language,
@@ -38,9 +38,9 @@ class RevgeocodeRequest {
         "&lat=$_lat&lon=$_lon" +
         "&addressdetails=${addressDetails ? 1 : 0}" +
         "&zoom=$zoom" +
-        ((language != null && language.isNotEmpty)
+        ((language != null && language!.isNotEmpty)
             ? "&accept-language=$language"
             : "") +
-        ((email != null && email.isNotEmpty) ? "&email=$email" : "");
+        ((email != null && email!.isNotEmpty) ? "&email=$email" : "");
   }
 }
