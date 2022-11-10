@@ -12,7 +12,7 @@ GeocodedFeature _$GeocodedFeatureFromJson(Map<String, dynamic> json) {
         ? null
         : FeatureProperties.fromJson(
             json['properties'] as Map<String, dynamic>),
-    type: json['type'] as String,
+    type: json['type'] as String?,
     geometry: json['geometry'] == null
         ? null
         : Geometry.fromJson(json['geometry'] as Map<String, dynamic>),
