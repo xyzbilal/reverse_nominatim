@@ -8,7 +8,7 @@ part of 'feature_collection.dart';
 
 FeatureCollection _$FeatureCollectionFromJson(Map<String, dynamic> json) {
   return FeatureCollection(
-    type: json['type'] as String,
+    type: json['type'] as String?,
     geocoding: json['geocoding'] == null
         ? null
         : Geocoding.fromJson(json['geocoding'] as Map<String, dynamic>),
