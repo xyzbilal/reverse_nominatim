@@ -8,10 +8,10 @@ part of 'geocoding.dart';
 
 Geocoding _$GeocodingFromJson(Map<String, dynamic> json) {
   return Geocoding(
-    version: json['version'] as String,
-    licence: json['licence'] as String,
-    attribution: json['attribution'] as String,
-    query: json['query'] as String,
+    version: json['version'] as String?,
+    licence: json['licence'] as String?,
+    attribution: json['attribution'] as String?,
+    query: json['query'] as String?,
   );
 }
 
