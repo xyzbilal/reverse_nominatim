@@ -8,16 +8,16 @@ part of 'administrative_level.dart';
 
 AdministrativeLevel _$AdministrativeLevelFromJson(Map<String, dynamic> json) {
   return AdministrativeLevel(
-    level1: json['level1'] as String,
-    level2: json['level2'] as String,
-    level3: json['level3'] as String,
-    level4: json['level4'] as String,
-    level5: json['level5'] as String,
-    level6: json['level6'] as String,
-    level7: json['level7'] as String,
-    level8: json['level8'] as String,
-    level9: json['level9'] as String,
-    level10: json['level10'] as String,
+    level1: json['level1'] as String?,
+    level2: json['level2'] as String?,
+    level3: json['level3'] as String?,
+    level4: json['level4'] as String?,
+    level5: json['level5'] as String?,
+    level6: json['level6'] as String?,
+    level7: json['level7'] as String?,
+    level8: json['level8'] as String?,
+    level9: json['level9'] as String?,
+    level10: json['level10'] as String?,
   );
 }
 
