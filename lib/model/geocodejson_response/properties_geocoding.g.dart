@@ -8,23 +8,23 @@ part of 'properties_geocoding.dart';
 
 PropertiesGeocoding _$PropertiesGeocodingFromJson(Map<String, dynamic> json) {
   return PropertiesGeocoding(
-    type: json['type'] as String,
-    accuracy: json['accuracy'] as int,
-    label: json['label'] as String,
-    name: json['name'] as String,
-    housenumber: json['housenumber'] as String,
-    street: json['street'] as String,
-    locality: json['locality'] as String,
-    postcode: json['postcode'] as String,
-    city: json['city'] as String,
+    type: json['type'] as String?,
+    accuracy: json['accuracy'] as int?,
+    label: json['label'] as String?,
+    name: json['name'] as String?,
+    housenumber: json['housenumber'] as String?,
+    street: json['street'] as String?,
+    locality: json['locality'] as String?,
+    postcode: json['postcode'] as String?,
+    city: json['city'] as String?,
     district: json['district'],
     county: json['county'],
     state: json['state'],
-    country: json['country'] as String,
+    country: json['country'] as String?,
     admin: json['admin'] == null
         ? null
         : AdministrativeLevel.fromJson(json['admin'] as Map<String, dynamic>),
-    geohash: json['geohash'] as String,
+    geohash: json['geohash'] as String?,
   );
 }
 
